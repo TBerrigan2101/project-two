@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background-color: #010203;
+    font-family: "Montserrat", sans-serif;
+    font-weight:400;
+    color: #FFFFFF;
+}
+
+
+/* header*/
+
+.logo {
+    width: 70%;
+    margin: 2%
+}
+
+
+/* headings and text */
+
+h1 {
+    font-family: Montserrat, sans-serif;
+    color: #E30613;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 45px;
+    margin-bottom: 2%;
+}
+
+h2 {
+    font-family: Montserrat, sans-serif;
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.bold {
+    font-weight: 700;
+    color: #d96845;
+}
+
+
+
+
+/* Structural CSS */
+
+.divider {
+    background-image: "assets/images/stripe.png";
+    background-repeat: repeat-x;
+  }
+
+.content-container {
+    max-width: 100%;
+    margin: 5% 10%;
+}
+
+  .flex-container-2col {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    columns: 2;
+    column-gap: 5%;
+  }
+
+.left-box {
+    width: 45%;
+    float: left;
+    margin-bottom: 5%;
+}
+
+.right-box {
+    width: 50%;
+    float: right;  
+    margin-bottom: 5%; 
+}
+
+
+.content-box {
+    margin-bottom: 5%;
+}
+
+.w100 {
+    width: 100%
+}
+
+.spacer {
+    height: 30%;
+    max-width: 100%;
+    margin: 5% 10%;
+}
+
+.btn {
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 15px 32px 15px 32px;
+    font-family: Montserrat, sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 100%;
+    background-color: #E30613;
+    color: #fcf9f7;
+}
+
+.btn:hover {
+    background-color: #65ff00;
+    color: #010203;
+    position: static;
+}
+
+
+/* footer */
+
+footer {
+    border-top: #E30613 solid 10px;
+    height: 150px;
+    margin-bottom: 0;
+    position: static;
+}
+
+
+.social-networks {
+     text-align: center;
+ 
+ }
+ 
+ .social-networks > li {
+     display: inline;
+ }
+ 
+ .social-networks i {
+     font-size: 160%;
+     margin: 1%;
+     padding: 1%;
+     color: #ffffff;
+ }
+
+ .social-networks i:hover {
+    font-size: 160%;
+    margin: 1%;
+    padding: 1%;
+    color: #65ff00;
+}
+
+
+    @media screen and (max-width: 600px) {      
+
+    .logo img {
+        max-width: 100%;
+    }
+
+    .menu { 
+        font-size: 120%;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+
+    }
+
+    .menu li{
+        clear: both;
+        float: left;
+        list-style-type: none;
+        margin-bottom: 2%;
+    }
+
+    .releases-left-box {
+        width:100%;
+    }
+
+    .releases-right-box {
+        width:100%;
+    }
+
+    .releases-center-box {
+        width:100%;
+    }
+
+    #stories-left-box {
+        width:100%;
+    }
+
+    #stories-right-box {
+        width:100%;
+    }
+
+    #stories-center-box {
+        width:100%;
+    }
+    .left-box {
+        width: 100%;
+    }
+    
+    .center-box {
+        width: 100%;
+    }
+    
+    .right-box {
+        width: 100%;
+    }
+
+    .flex-container > div {
+        width: 100%;
+        margin: 10px;
+      }
+
+      #cover-text {
+        position: absolute;
+        top: 10%;
+        left:10%;
+        width: 80%;
+    }
+
+    
+}
+
