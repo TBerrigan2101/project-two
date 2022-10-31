@@ -18,7 +18,8 @@ body {
 
 .logo {
     width: 80%;
-    margin-top: 4%;
+    margin-top: 2%;
+    padding: 0 10%;
 }
 
 
@@ -50,7 +51,7 @@ h2 {
 
 p {
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 2;
 }
 
@@ -59,38 +60,32 @@ p {
 /* Structural CSS */
 
 .divider {
-    background-image: "assets/images/stripe.png";
+    height: 10px;
+    background-image: url('.com./assets/images/stripe.png');
     background-repeat: repeat-x;
   }
 
 .content-container {
     max-width: 100%;
-    margin: 5% 10%;
+    margin: 2% 10%;
 }
 
-  .flex-container-2col {
+.flex-container-2col {
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
     columns: 2;
-    column-gap: 5%;
+    column-gap: 6%;
   }
 
 .left-box {
-    width: 45%;
+    width: 47%;
     float: left;
-    margin-bottom: 5%;
 }
 
 .right-box {
-    width: 50%;
+    width: 47%;
     float: right;  
-    margin-bottom: 5%; 
-}
-
-
-.content-box {
-    margin-bottom: 5%;
 }
 
 .w100 {
@@ -98,7 +93,7 @@ p {
 }
 
 .btn {
-    margin-top: 20px;
+    margin: 1%;
     border-radius: 4px;
     padding: 15px 40px 15px 40px;
     font-family: Montserrat, sans-serif;
@@ -109,6 +104,7 @@ p {
     font-size: 100%;
     background-color: #E30613;
     color: #fcf9f7;
+
 }
 
 .btn:hover {
@@ -117,11 +113,17 @@ p {
     position: static;
 }
 
+.score-area {
+    width: 60%;
+    font-size: 1.2rem;
+}
+
 
 /* footer */
 
 footer {
     border-top: #E30613 solid 10px;
+    background-color: #E30613;
     height: 150px;
     margin-bottom: 0;
     position: static;
@@ -159,10 +161,6 @@ footer {
     }
 
     .left-box {
-        width: 100%;
-    }
-    
-    .center-box {
         width: 100%;
     }
     
