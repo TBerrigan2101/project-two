@@ -29,35 +29,44 @@
             </div>
             
             <div class="right-box"> 
-                 <!-- Image taken from spotify.com with edit by me-->
+                 <!-- Image taken from https://imgur.com/gallery/siIqH8C-->
                 <img src="assets/images/ghostbusters_team.jpeg" class="w100" alt="Image of the New York Ghostbusters team">
             </div>
             
         </div>
     </div>
+    
+    
     <!-- Game Section-->
-    <div class="content-container">
-            <button class="btn">SQUARE</button>
-            <button class="btn">CIRCLE</button>
-            <button class="btn">STAR</button>
-            <button class="btn">PLUS SIGN</button>
-            <button class="btn">WAVY LINES</button>
-    </div>
+    
+    <section class="game-area">
 
-    <div class="content-container">
-        <div class="flex-container-2col">
-            <div class="left-box"> 
-                  <!-- Image taken from spotify.com with edit by me-->
-                  <img src="assets/images/game_image.png" class="w100" alt="Options of symbol choices for the ESP test.">
-             </div>
+        <div class="content-container">
+            <button aria-label="square" data-type="0" class="btn">SQUARE</button>
+            <button aria-label="circle"  data-type="1" class="btn">CIRCLE</button>
+            <button aria-label="star"  data-type="2" class="btn">STAR</button>
+            <button aria-label="plus-sign"  data-type="3" class="btn">PLUS SIGN</button>
+            <button aria-label="wavy-lines"  data-type="4" class="btn">WAVY LINES</button>
+        </div>
+
+        <div class="content-container">
+
+            <div class="flex-container-2col">
+
+                <div class="left-box"> 
+                   <!-- Image taken from www.comingsoon.net-->
+                  <h2>You Predict<span id="player_choice"></span></h2>
+                  <img id="player-image" src="assets/images/player-image.png" class="w100" alt="Options of symbol choices for the ESP test.">
+                </div>
             
-            <div class="right-box"> 
+                <div class="right-box"> 
+                <h2>Dr. Venkman's card<span id="computer_choice"></span></h2>
                  <!-- Image taken from spotify.com with edit by me-->
-                <img src="assets/images/game_image2.png" class="w100" alt="Image of Doctor Venkman holding a test card.">
-            </div>
+                <img id="computer-image" src="assets/images/computer-image.png" class="w100" alt="Image of Doctor Venkman holding a test card.">
+                </div>
             
         </div>
-        
+
     </div>
 
     <div class="content-container">
@@ -67,6 +76,8 @@
         <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
         </div>
     </div>
+
+    </section>
 
     <div>
         <img src="assets/images/smoke.png" alt="Green ghostly mist.">
