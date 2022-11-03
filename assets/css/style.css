@@ -51,8 +51,8 @@ h2 {
 
 p {
     color: #FFFFFF;
-    font-size: 18px;
-    line-height: 2;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 
@@ -68,7 +68,7 @@ p {
   }
 
 .content-container {
-    max-width: 100%;
+    max-width: 60%;
     margin: 2% 10%;
 }
 
@@ -97,9 +97,9 @@ p {
 .btn {
     margin: 1%;
     border-radius: 4px;
-    padding: 15px 40px 15px 40px;
+    padding: 7px 12px 8px 12px;
     font-family: Montserrat, sans-serif;
-    font-size: 35px;
+    font-size: 15px;
     font-weight: 600;
     text-align: center;
     letter-spacing: 6px;
