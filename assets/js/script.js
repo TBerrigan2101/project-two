@@ -2,6 +2,8 @@ const buttons = document.getElementsByClassName("btn");
 const playerImage = document.getElementById("player-image");
 const computerImage = document.getElementById("computer-image");
 const choices = ["square", "circle", "star", "plus-sign", "wavy-lines"]
+const correctReply = ["Incredible", "Amazing", "You can’t see these can you?", "You are a legitimate phenomenon", "You’re no fluke"]
+const wrongReply = ["Good guess, but wrong", "Oooh close. But definitely wrong.", "Sorry, this isn’t your lucky day", "Do you even want the five bucks?", "Do I have to shock you again?"]
 
 
 
@@ -32,6 +34,7 @@ function checkResult (playerChoice, computerChoice) {
     } else {
         increaseComputerScore();
     }
+
 }
 
 
@@ -40,12 +43,22 @@ function increasePlayerScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
 
+    let response = Math.floor(Math.random() * 5);
+    let correctResponse = correctReply[response];
+    document.getElementById("computer_response").innerText = correctResponse;
+
 }
 
 function increaseComputerScore() {
 
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
-    
+
+    let incorrectResponse = Math.floor(Math.random() * 5);
+    let wrongResponse = wrongReply[incorrectResponse];   
+    document.getElementById("computer_response").innerText = wrongResponse;
+
 }
+    
+
 
