@@ -19,7 +19,7 @@ body {
 .logo {
     width: 80%;
     margin-top: 2%;
-    padding: 0 10%;
+    padding: 3% 10%;
 }
 
 
@@ -39,13 +39,13 @@ h1 {
 
 h2 {
     font-family: Montserrat, sans-serif;
-    color: #FFFFFF;
+    color: #65ff00;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
-    text-align: left;
+    text-align: center;
     letter-spacing: 1px;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
 
 p {
@@ -54,21 +54,17 @@ p {
     line-height: 1.5;
 }
 
-
-
-
-
 /* Structural CSS */
 
 .divider {
-    height: 10px;
-    background-image: url('.com./assets/images/stripe.png');
+    height: 8px;
+    background-image: url('/assets/images/stripe.png');
     background-repeat: repeat-x;
   }
 
 .content-container {
-    max-width: 60%;
-    margin: 2% 10%;
+    max-width: 80%;
+    margin: 2% 10% 0% 10%;
 }
 
 .flex-container-2col {
@@ -82,9 +78,21 @@ p {
 .left-box {
     width: 47%;
     float: left;
+    padding-bottom: 5%;
 }
 
 .right-box {
+    width: 47%;
+    float: right;  
+    padding-bottom: 5%;
+}
+
+.game-left-box {
+    width: 47%;
+    float: left;
+}
+
+.game-right-box {
     width: 47%;
     float: right;  
 }
@@ -96,26 +104,23 @@ p {
 .btn {
     margin: 1%;
     border-radius: 4px;
-    padding: 7px 7px 8px 7px;
     font-family: Montserrat, sans-serif;
     font-size: 15px;
     font-weight: 600;
     text-align: center;
     letter-spacing: 6px;
     font-size: 100%;
-    background-color: #E30613;
     color: #fcf9f7;
+    display: inline-block;
 
 }
 
 .btn:hover {
-    background-color: #65ff00;
+    border-color: #65ff00;
     color: #010203;
-    position: static;
 }
 
 .score-area {
-    width: 60%;
     font-size: 15px;
     text-align: center;
 }
@@ -159,15 +164,29 @@ footer {
     @media screen and (max-width: 600px) {      
 
     .logo img {
-        max-width: 100%;
+        max-width: 120%;
+    }
+
+    h1 {
+        font-size: 27px;
     }
 
     .left-box {
-        width: 50%;
+        width: 100%;
     }
     
     .right-box {
-        width: 50%;
+        width: 100%;
+    }
+
+    .game-left-box {
+        width: 47%;
+        float: left;
+    }
+    
+    .game-right-box {
+        width: 47%;
+        float: right;  
     }
     
 }

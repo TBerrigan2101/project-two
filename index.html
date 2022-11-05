@@ -9,7 +9,7 @@
 </head>
 <body>
   <!-- Header-->
-  <header class="content-container">
+  <header>
       <img class = "logo" src="assets/images/ghostbusters_recruiting_logo.png" alt="Ghostbusters NYC Recruitment Logo">
     </header>
 
@@ -42,46 +42,51 @@
     <section class="game-area">
 
         <div class="content-container">
-            <button aria-label="square" data-type="0" class="btn">SQUARE</button>
-            <button aria-label="circle"  data-type="1" class="btn">CIRCLE</button>
-            <button aria-label="star"  data-type="2" class="btn">STAR</button>
-            <button aria-label="plus-sign"  data-type="3" class="btn">PLUS SIGN</button>
-            <button aria-label="wavy-lines"  data-type="4" class="btn">WAVY LINES</button>
+            
+            <img src="assets/images/square-button.png" class="btn" data-type="0"/>
+            <img src="assets/images/circle-button.png" class="btn" data-type="1"/>
+            <img src="assets/images/star-button.png" class="btn" data-type="2"/>
+            <img src="assets/images/plus-button.png" class="btn" data-type="3"/>
+            <img src="assets/images/wavy-button.png" class="btn" data-type="4"/>
+        </div>
+
+        <div class="content-container">
+            <div class="score-area">
+            <h2><span id="computer_response">All right, I'm going to turn over the next card. I want you to concentrate. I want you to tell me what it is.</span></h2>
+            <p class="scores">Correct Answers: <span id="score">0</span></p>
+            <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
+           
+            </div>
         </div>
 
         <div class="content-container">
 
             <div class="flex-container-2col">
 
-                <div class="left-box"> 
+                <div class="game-left-box"> 
                    <!-- Image created by me-->
-                  <h2>You Predict<span id="player_choice"></span></h2>
                   <img id="player-image" src="assets/images/player-image.png" class="w100" alt="Options of symbol choices for the ESP test.">
+                  <h2>Your Prediction</h2>
                 </div>
             
-                <div class="right-box"> 
-                <h2><span id="computer_response">Dr. Venkman's card</span></h2>
+                <div class="game-right-box"> 
                  <!-- Image taken from www.comingsoon.net-->
                 <img id="computer-image" src="assets/images/computer-image.png" class="w100" alt="Image of Doctor Venkman holding a test card.">
-                </div>
+                <h2>Dr. Venkman's Card</h2>
+            </div>
             
         </div>
 
     </div>
-
-    <div class="content-container">
         
-        <div class="score-area">
-        <p class="scores">Correct Answers: <span id="score">0</span></p>
-        <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
-        </div>
-    </div>
-
+    
     </section>
 
     <div>
         <img src="assets/images/smoke.png" alt="Green ghostly mist.">
      </div>
+
+     <div class="divider"></div>
 
  <!-- Footer and Social Media -->
  
