@@ -27,7 +27,7 @@ function playGame (playerChoice) {
 
     let result = checkResult(choices[playerChoice], choices[computerChoice]);
 
-    setTimeout(resetGame, 3500);
+    setTimeout(resetGame, 2000);
         
 
 }

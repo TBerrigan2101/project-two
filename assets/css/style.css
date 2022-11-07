@@ -72,7 +72,7 @@ p {
 
 .content-container {
     max-width: 80%;
-    margin: 2% 10% 0% 10%;
+    margin: 0% 10% 0% 10%;
 }
 
 .flex-container-2col {
@@ -106,30 +106,19 @@ p {
 }
 
 .button-container {
-    max-width: 80%;
+    max-width: 100%;
     margin-top: 2%;
+    text-align: center;
 }
 .w100 {
     width: 100%
 }
 
 .btn {
-    margin: 1%;
-    border-radius: 4px;
-    font-family: Montserrat, sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: 6px;
-    font-size: 100%;
-    color: #fcf9f7;
     display: inline-block;
+    width: 15%;
+    padding: 0 2%
 
-}
-
-.btn:hover {
-    border-color: #65ff00;
-    color: #010203;
 }
 
 .score-area {
@@ -208,6 +197,15 @@ footer {
         width: 47%;
         float: right;  
     }
+
+    .btn {
+        display: inline-block;
+        width: 27%;
+        padding: 2% 2%
+    
+    }
+
+    
     
 }
 
