@@ -137,6 +137,10 @@ p {
     text-align: center;
 }
 
+.bottom-image {
+    overflow: hidden;
+}
+
 
 /* footer */
 
