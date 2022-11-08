@@ -40,7 +40,7 @@ h2 {
     text-align: center;
     letter-spacing: 1px;
     margin-top: 4%;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
 }
 
 p {
@@ -132,7 +132,6 @@ a {
 
 .score-area {
     font-size: 15px;
-    text-align: center;
 }
 
 .bottom-image {

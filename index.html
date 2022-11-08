@@ -45,7 +45,7 @@
             
             <div class="divider"></div>  
 
-            <h1>ESP Test</h1>
+            <h2>ESP Test</h2>
             <p>Pick from the options below and wait for Dr. Venkman to reveal his card.</p> 
             
             <div class ="button-container">
@@ -58,9 +58,7 @@
 
             <div class="score-area">
             <h2><span id="computer_response">All right, I'm going to turn over the next card. I want you to concentrate. I want you to tell me what it is.</span></h2>
-            <p class="scores"><span class = score-red>Correct Answers:</span> <span class = score id="score">0</span></p>
-            <p class="scores"><span class = score-red>Incorrect Answers:</span> <span class = score id="incorrect">0</span></p>
-           
+            
             </div>
         </div>
 
@@ -70,13 +68,15 @@
 
                 <div class="game-left-box"> 
                    <!-- Image created by me-->
+                   <p class="scores"><span class = score-red>Correct:</span> <span class = score id="score">0</span></p>
                   <img id="player-image" src="assets/images/player-image.png" class="w100" alt="Options of symbol choices for the ESP test.">
                   <h2>Your Prediction</h2>
                 </div>
             
                 <div class="game-right-box"> 
                  <!-- Image taken from www.comingsoon.net-->
-                <img id="computer-image" src="assets/images/computer-image.png" class="w100" alt="Image of Doctor Venkman holding a test card.">
+                 <p class="scores"><span class = score-red>Incorrect:</span> <span class = score id="incorrect">0</span></p>
+                 <img id="computer-image" src="assets/images/computer-image.png" class="w100" alt="Image of Doctor Venkman holding a test card.">
                 <h2>Dr. Venkman's Card</h2>
             </div>
             
