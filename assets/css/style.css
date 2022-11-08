@@ -93,6 +93,7 @@ p {
     width: 47%;
     float: right;  
     padding-bottom: 5%;
+    padding-top: 4%;
 }
 
 .game-left-box {
@@ -166,7 +167,7 @@ footer {
 }
 
 
-    @media screen and (max-width: 320px) {      
+    @media screen and (max-width: 425px) {      
 
     .logo img {
         max-width: 120%;
