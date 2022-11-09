@@ -1,6 +1,6 @@
 # Ghostbusters ESP Test Game
 
-Live site: https://tberrigan2101.github.io/project-one/
+Live site: 
 
 A game based on the same principles as 'Rock, Paper, Scissors' but with a twist based on inspiration from a recent Halloween viewing of the 1984 film 'Ghostbusters'
 
@@ -13,7 +13,7 @@ The game is based on the [ESP Test Scene](https://youtu.be/HW8Ua49dCYk) of the m
 
 - __Theme and Colour Scheme__
 
-  - I based the colour scheme on colours associated with the Ghostbusters branding such as the red and white from the famous Ghostbusters logo, green to represent the slime colour and the yellow and black angled lines with smoke as seen on the trap prop from the film.
+  - I based the colour scheme on colours associated with the Ghostbusters branding such as the red and white from the famous Ghostbusters logo, green to represent a 'slime' colour and the yellow and black angled lines with smoke as seen on the trap prop from the film.
 
 
   ![ghostbusters branding](readme-images/ghostbusters_branding.jpg)
@@ -22,13 +22,15 @@ The game is based on the [ESP Test Scene](https://youtu.be/HW8Ua49dCYk) of the m
   
 - __Header and Introduction__
 
-  - I created a logo for the top of the page as 'Ghostbusters Recruiting' with the concept that this page would effectively be a fictional recruitment page to hire potential new Ghostbusters. I used lines and referencees from the film for effect and then explained that in order to successfully join the team the applicant would need to attempt the ESP test on the page.
+  - I created a logo for the top of the page as 'Ghostbusters Recruiting' with the concept that this page would effectively be a fictional recruitment page to hire potential new Ghostbusters. I used lines and references from the film for effect and then explained that in order to successfully join the team the applicant would need to attempt the ESP test on the page.
 
 - __Game Options__
 
   - The instructions state to choose from one of five options by clicking on the interactive buttons below in an attempt to successfully match the symbol on the card the Dr. Venkman (the computer) is theoretically holding. The five options are based on symbols mentioned in the film and created by me in Adobe Illustrator.
 
   - The five options are.
+
+  ![game options](readme-images/game-options.png)
 
 - __The Game Mechanics__
 
@@ -71,9 +73,9 @@ Below are my results from testing the site both structurally and visually.
 ### 5.1 Code Validation
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftberrigan2101.github.io%2Fproject-one%2F)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftberrigan2101.github.io%2Fproject-two%2F)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftberrigan2101.github.io%2Fproject-one%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftberrigan2101.github.io%2Fproject-two%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 
 ### 5.2 User observations
@@ -81,6 +83,8 @@ Below are my results from testing the site both structurally and visually.
 - The people I tested the site with found the site easy to navigate and it felt relatively intuitive and the content made sense.
 
 - One of the major issues that was flagged with me was I originally had text buttons for the game options and an image on the left showing the icons visually and they though they were interactive so they bypassed the text buttons and clicked on the icon display graphic which wasn't an active button. After that I decided to remove the text buttons from the menu and just use the individual icons as buttons and replaced the player image on the left side wih the Ghostbusters graphic.
+
+  ![old layout](readme-images/old-layout.png)
 
 ### 5.3 Fixed bugs
 
@@ -96,15 +100,9 @@ Nothing that I can see.
 
 ### 5.5 Performance Testing
 
-- Initial test for the site was good and there were a few small changes to be made, mostly image sizing that I compressed to the point where I thought wouldn't be compromised.
+- Initial test for the site was good and there were a few small changes to be made, mostly image sizing that I compressed to the point where I thought wouldn't be compromised. Following those changes I got these results from Lighthouse.
 
 ![performance-homepage](readme-images/performance-homepage.png)
-
-- A major performance issue I was having was due to the embedded Youtube videos on the individual Stories pages
-
-![performance-fails](readme-images/performance-fails.jpg)
-
-- This was due to javascript issues and I felt it was best to leave the videos out for now until I become more familiar with the solutions.
 
 
 
