@@ -11,9 +11,9 @@ body {
 /* header*/
 
 .logo {
-    width: 80%;
+    width: 60%;
     margin-top: 2%;
-    padding: 3% 10%;
+    padding: 3% 20%;
 }
 
 
@@ -37,9 +37,9 @@ h2 {
     font-size: 20px;
     line-height: 24px;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
     letter-spacing: 1px;
-    margin-top: 4%;
+    margin-top: 2%;
     margin-bottom: 2%;
 }
 
@@ -54,6 +54,7 @@ p {
     font-size: 20px;
 
 }
+
 .score-red {
     font-size: 20px;
     color: #ff0415;
@@ -70,6 +71,14 @@ a {
     letter-spacing: 2px;
   }
 
+  .message {
+    color: #65ff00;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+}
+
 /* Structural CSS */
 
 .divider {
@@ -79,8 +88,8 @@ a {
   }
 
 .content-container {
-    max-width: 80%;
-    margin: 0% 10% 0% 10%;
+    max-width: 60%;
+    margin: 0% 20% 0% 20%;
 }
 
 .flex-container-2col {
@@ -88,30 +97,32 @@ a {
     flex-wrap: wrap;
     max-width: 100%;
     columns: 2;
-    column-gap: 6%;
+    column-gap: 12%;
   }
 
 .left-box {
-    width: 47%;
+    width: 44%;
     float: left;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
 }
 
 .right-box {
-    width: 47%;
+    width: 44%;
     float: right;  
-    padding-bottom: 5%;
     padding-top: 4%;
+    padding-bottom: 3%;
 }
 
 .game-left-box {
-    width: 47%;
+    width: 44%;
     float: left;
+    margin-top: -2%;
 }
 
 .game-right-box {
-    width: 47%;
+    width: 44%;
     float: right; 
+    margin-top: -2%;
 }
 
 .button-container {
@@ -175,12 +186,12 @@ footer {
     }
 
     .game-left-box {
-        width: 47%;
+        width: 44%;
         float: left;
     }
     
     .game-right-box {
-        width: 47%;
+        width: 44%;
         float: right;  
     }
 
@@ -202,6 +213,11 @@ footer {
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 2px;
+    }
+
+    .content-container {
+        max-width: 90%;
+        margin: 0% 5% 0% 5%;
     }
 
     
