@@ -83,8 +83,8 @@ a {
 /* Structural CSS */
 
 .divider {
-    height: 8px;
-    background-image: url('assets/images/stripe.png');
+    height: 10px;
+    background-image: url('/assets/images/stripe.png');
     background-repeat: repeat-x;
   }
 
@@ -161,6 +161,29 @@ footer {
     position: static;
 }
 
+
+.social-networks {
+    text-align: center;
+
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 1%;
+    color: #ffffff;
+}
+
+.social-networks i:hover {
+   font-size: 160%;
+   margin: 1%;
+   padding: 1%;
+   color: #65ff00;
+}
 
 
     @media screen and (max-width: 425px) {      
