@@ -84,7 +84,7 @@ a {
 
 .divider {
     height: 10px;
-    background-image: url("..assets/images/stripe.png");
+    background-image: url("../images/stripe.jpg");
     background-repeat: repeat-x;
   }
 
