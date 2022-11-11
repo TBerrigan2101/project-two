@@ -40,37 +40,28 @@ The game is based on the [ESP Test Scene](https://youtu.be/HW8Ua49dCYk) of the m
 
    - Depending on the result, the player score or the computer score increases accordingly along with a message from Dr. Venkman congratulating or commiserating them depending on the result, again using lines from the film.
 
-     - Once the player has taken a turn, the game starts the next round and a random preparatory line is stated by the computer based on another random method and choosing options from 'const intervalText'. 
 
 
 ## 2. Future features
 
 - It was proposed by mentor that I created an overlay div for the buttons once the buttons are clicked to avoid the user pressing the button too quickly after picking their option.
 
+- I would like to reintroduce the 'interval' feature that I mention in the busg section below.
+
 - I would like to have some type of animation for revealing the cards.
 
-
-## 3. Wireframes
-
-I started off doing my initial sketches on paper to develop the basic layout and site structure. The final website layout did change from this as my initial layout proposal caused issues on mobile devices.
-
-![wireframe sketches](readme-images/initial-sketches.png)
-
-![wireframes illustrator](readme-images/refined-wireframes.png)
-
-
-## 4. Technology Used
+## 3. Technology Used
 - HTML
 - CSS
 - Javascript
 
 
-## 5. Testing 
+## 4. Testing 
 
 Below are my results from testing the site both structurally and visually.
 
 
-### 5.1 Code Validation
+### 4.1 Code Validation
 
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftberrigan2101.github.io%2Fproject-two%2F)
@@ -78,7 +69,7 @@ Below are my results from testing the site both structurally and visually.
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftberrigan2101.github.io%2Fproject-two%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 
-### 5.2 User observations
+### 4.2 User observations
 
 - The people I tested the site with found the site easy to navigate and it felt relatively intuitive and the content made sense.
 
@@ -86,19 +77,25 @@ Below are my results from testing the site both structurally and visually.
 
   ![old layout](readme-images/old-layout.png)
 
-### 5.3 Fixed bugs
+### 4.3 Bugs
+
+   - I initially wanted to design an 'interval' function to the game where I wanted to replicate Dr. Venkman holding up a new card each time before the player makes their next guess and for this I created a function called 'resetGame'.This function would reset the player and computer images to their original state and would prompt the computer to speak another line from the movie that prepared the user to take another guess ('Clear your head','Nervous?' etc) so the user felt they were taking turns with a new card each time.
 
 
-### 5.3 Unfixed bugs
+     ![const interval string](readme-images/const-interval.png)
+     ![reset function](readme-images/reset-function.png)
 
-Nothing that I can see.
+   - I set a timeout of 2 seconds for resetGame() in the playGame (playerChoice) function so each time the user made a choice the game would reset in two seconds but retain the scores. However the buttons were still live and my mentor pointed out that it wasn't obvious that the player had to wait for the images to reset before taking their next turn and could keep making guesses potentially creating confusion.
 
+    - We discussed different approaches such as trying to temporarily remove the button Event Listeners, adding an overlay to the button so the player could access them until the game reset and hiding the div that held the buttons. 
 
-### 5.4 Supported Screens and Browsers
+     - Unfortunately all of my attempts at trying to make this work failed and while I wanted to try and push the game further I felt it was better to remove the 'interval' feature completely as it didn't take anything away from the basic game functionality when leaving it in the game could cause problems for the user.
+
+### 4.4 Supported Screens and Browsers
 
 - I tested the site using Chrome, Safari and Firefox and all browsers tested fine.
 
-### 5.5 Performance Testing
+### 4.5 Performance Testing
 
 - Initial test for the site was good and there were a few small changes to be made, mostly image sizing that I compressed to the point where I thought wouldn't be compromised. Following those changes I got these results from Lighthouse.
 
@@ -106,7 +103,7 @@ Nothing that I can see.
 
 
 
-## 6. Deployment
+## 5. Deployment
 
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
@@ -117,28 +114,30 @@ Nothing that I can see.
 The live link can be found here - 
 
 
-## 7. Credits 
+## 6. Credits 
 
 In this section I will break down the credits for my project. 
 
-### 7.1 Code
+### 6.1 Code
+
+- I reused some of the code for the footer social media icons from my last project which was developed from the code on the [Love Running](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/f2db5fd401004fccb43b01a6066a5333/) example project from Code Institute.
 
 - I built some of the code based on the code shown in the [Rock Paper Scissors](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+JSE_PAGPPF+2021_Q2/courseware/30137de05cd847d1a6b6d2c7338c4655/c3bd296fe9d643af86e76e830e1470dd/) example project from Code Institute.
 
 
  - The code I used to develop the timeout feature in the function resetGame() was taken from [here](https://www.w3schools.com/js/js_timing.asp)
 
-### 7.2 Fonts
+### 6.2 Fonts
 
 - All fonts were imported from [Google Fonts](https://fonts.google.com/about)
 
-### 7.3 Written Content 
+### 6.3 Written Content 
 
 - While I edited or wrote all the text, it contains references derived directly from quotes from the film which I sourced from a transcript [here](https://movies.fandom.com/wiki/Ghostbusters/Transcript).
 
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
-### 7.4 Media
+### 6.4 Media
 
 - The header logo was designed by me using a vector of the Ghostbusters logo from [here](https://www.brandsoftheworld.com/logo/ghostbusters-6)
 
@@ -151,7 +150,7 @@ In this section I will break down the credits for my project.
 - The icons for the buttons were designed by me in Adobe Illustrator.
 
 
-### 7.5 Acknowledgements
+### 6.5 Acknowledgements
 
 - I would like to thank my Code Institute mentor Rohit Sharma for all of his help throughout the project.
 
