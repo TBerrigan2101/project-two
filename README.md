@@ -1,6 +1,6 @@
 # Ghostbusters ESP Test Game
 
-Live site: 
+Live site: https://tberrigan2101.github.io/project-two/
 
 A game based on the same principles as 'Rock, Paper, Scissors' but with a twist based on inspiration from a recent Halloween viewing of the 1984 film 'Ghostbusters'
 
@@ -121,7 +121,7 @@ Below are my results from testing the site both structurally and visually.
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - 
+The live link can be found here - https://tberrigan2101.github.io/project-two/
 
 
 ## 6. Credits 
