@@ -2,7 +2,7 @@
 
 Live site: https://tberrigan2101.github.io/project-two/
 
-A game based on the same principles as 'Rock, Paper, Scissors' but with a twist based on inspiration from a recent Halloween viewing of the 1984 film 'Ghostbusters'
+A game based on the same principles as 'Rock, Paper, Scissors' but with a twist based on inspiration from a recent Halloween viewing of the 1984 film 'Ghostbusters'.
 
 The game is based on the [ESP Test Scene](https://youtu.be/HW8Ua49dCYk) of the movie when Dr. Peter Venkman (Bill Murray) is performing an ESP (Extrasensory perception, or sixth sense) test with two volunteers that have to guess the symbol on the card Dr. Venkman is holding.
 
@@ -28,7 +28,7 @@ The game is based on the [ESP Test Scene](https://youtu.be/HW8Ua49dCYk) of the m
 
 - __Game Options__
 
-  - The instructions state to choose from one of five options by clicking on the interactive buttons below in an attempt to successfully match the symbol on the card the Dr. Venkman (the computer) is theoretically holding. The five options are based on symbols mentioned in the film and created by me in Adobe Illustrator.
+  - The instructions state to choose from one of five options by clicking on the interactive buttons below in an attempt to successfully match the symbol on the card Dr. Venkman (the computer) is theoretically holding. The five options are based on symbols mentioned in the film and created by me in Adobe Illustrator.
 
   - The five options are.
 
@@ -38,7 +38,7 @@ The game is based on the [ESP Test Scene](https://youtu.be/HW8Ua49dCYk) of the m
 
   - When the user picks their option, their choice is shown on the left side of the screen. 
 
-   - The computer using a random option in the playGame() function then chooses an image from the const 'choices' declaration and displays its choice on the right side of the screen.
+   - The computer using a random number generator in the playGame() function then chooses an image from the const 'choices' declaration and displays its choice on the right side of the screen.
 
    - Depending on the result, the player score or the computer score increases accordingly along with a message from Dr. Venkman congratulating or commiserating them depending on the result, again using lines from the film.
 
@@ -97,9 +97,10 @@ Below are my results from testing the site both structurally and visually.
 
    - I set a timeout of 2 seconds for resetGame() in the playGame (playerChoice) function so each time the user made a choice the game would reset in two seconds but retain the scores. The correct responses were being generated from the string I createed but the buttons were still live and my mentor pointed out that it wasn't obvious that the player had to wait for the images to reset before taking their next turn and could keep making guesses potentially creating confusion.
 
-    - We discussed different approaches such as trying to temporarily remove the Event Listener from the buttons, adding an overlay to the buttons so the player couldn't access them until the game reset and hiding the div that held the buttons after each click. 
+   - We discussed different approaches such as trying to temporarily remove the Event Listener from the buttons, adding an overlay to the buttons so the player couldn't access them until the game reset and hiding the div that hid the buttons after each click. 
 
-     - Unfortunately all of my attempts at trying to make this work failed and while I wanted to try and push the game further I felt it was better to remove the 'interval' feature completely as it didn't take anything away from the basic game functionality but leaving it in the game could cause problems for the user.
+   - Unfortunately all of my attempts at trying to make this work failed and while I wanted to try and push the game further I felt it was better to remove the 'interval' feature completely as it didn't take anything away from the basic game functionality but leaving it in the game could cause problems for the user.
+
 
 ### 4.4 Supported Screens and Browsers
 
