@@ -84,7 +84,7 @@ a {
 
 .divider {
     height: 10px;
-    background-image: url('/assets/images/stripe.png');
+    background-image: "assets/images/stripe.png";
     background-repeat: repeat-x;
   }
 
@@ -182,7 +182,7 @@ footer {
    font-size: 160%;
    margin: 1%;
    padding: 1%;
-   color: #65ff00;
+   color: #010203;
 }
 
 
