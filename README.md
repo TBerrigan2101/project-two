@@ -46,7 +46,7 @@ The game is based on the [ESP Test Scene](https://youtu.be/HW8Ua49dCYk) of the m
 
 - It was proposed by mentor that I created an overlay div for the buttons once the buttons are clicked to avoid the user pressing the button too quickly after picking their option.
 
-- I would like to reintroduce the 'interval' feature that I mention in the busg section below.
+- I would like to reintroduce the 'interval' feature that I mention in the bugs section below.
 
 - I would like to have some type of animation for revealing the cards.
 
@@ -73,7 +73,7 @@ Below are my results from testing the site both structurally and visually.
 
 - The people I tested the site with found the site easy to navigate and it felt relatively intuitive and the content made sense.
 
-- One of the major issues that was flagged with me was I originally had text buttons for the game options and an image on the left showing the icons visually and they though they were interactive so they bypassed the text buttons and clicked on the icon display graphic which wasn't an active button. After that I decided to remove the text buttons from the menu and just use the individual icons as buttons and replaced the player image on the left side wih the Ghostbusters graphic.
+- One of the major issues that was flagged with me was I originally had text buttons for the game options and an image on the left showing the icons visually and users thought this image was interactive so they bypassed the text buttons and clicked on the icon display graphic which wasn't an active button. After that I decided to remove the text buttons from the menu and just use the individual icons as buttons and replaced the player image on the left side wih the Ghostbusters graphic so users could understand what they had to select.
 
   ![old layout](readme-images/old-layout.png)
 
