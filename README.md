@@ -6,6 +6,8 @@ A game based on the same principles as 'Rock, Paper, Scissors' but with a twist 
 
 The game is based on the [ESP Test Scene](https://youtu.be/HW8Ua49dCYk) of the movie when Dr. Peter Venkman (Bill Murray) is performing an ESP (Extrasensory perception, or sixth sense) test with two volunteers that have to guess the symbol on the card Dr. Venkman is holding.
 
+  ![device mock up](readme-images/device-mockup.png)
+
 
 ## 1. Features 
 
@@ -40,11 +42,12 @@ The game is based on the [ESP Test Scene](https://youtu.be/HW8Ua49dCYk) of the m
 
    - Depending on the result, the player score or the computer score increases accordingly along with a message from Dr. Venkman congratulating or commiserating them depending on the result, again using lines from the film.
 
+  ![gameplay example](readme-images/game-example.png)
 
 
 ## 2. Future features
 
-- It was proposed by mentor that I created an overlay div for the buttons once the buttons are clicked to avoid the user pressing the button too quickly after picking their option.
+- It was proposed by my mentor that I created an overlay div for the buttons once the buttons are clicked to avoid the user pressing the button too quickly after picking their option.
 
 - I would like to reintroduce the 'interval' feature that I mention in the bugs section below.
 
@@ -65,31 +68,38 @@ Below are my results from testing the site both structurally and visually.
 
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftberrigan2101.github.io%2Fproject-two%2F)
+
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftberrigan2101.github.io%2Fproject-two%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+- Javascript
+  - I passed my code through [JShint](/https://jshint.com/) and I got 21 warnings but when I discussed them with my mentor he said I shouldn't worry about them in the case of this project
+    ![JS Hint Warnings](readme-images/js-hint-warnings.png)
+  - I did get a note on an unused variable but whenever I tried to edit or remove this the game stopped working so I will need to revisit it again to understand what the reason might be.
+    ![JS Hint Unused Variable](readme-images/js-hint-unused-variable.png)
 
 
 ### 4.2 User observations
 
 - The people I tested the site with found the site easy to navigate and it felt relatively intuitive and the content made sense.
 
-- One of the major issues that was flagged with me was I originally had text buttons for the game options and an image on the left showing the icons visually and users thought this image was interactive so they bypassed the text buttons and clicked on the icon display graphic which wasn't an active button. After that I decided to remove the text buttons from the menu and just use the individual icons as buttons and replaced the player image on the left side wih the Ghostbusters graphic so users could understand what they had to select.
+- One of the major issues that was flagged with me was I originally had text buttons for the game options and an image on the left showing the visuals of the icons and users thought this image was interactive so they bypassed the text buttons and clicked on the icon display graphic which wasn't an active button. After that I decided to remove the text buttons from the menu and just use the individual icons as buttons and replaced the player image on the left side wih the Ghostbusters graphic so users would understand what they had to select.
 
   ![old layout](readme-images/old-layout.png)
 
 ### 4.3 Bugs
 
-   - I initially wanted to design an 'interval' function to the game where I wanted to replicate Dr. Venkman holding up a new card each time before the player makes their next guess and for this I created a function called 'resetGame'.This function would reset the player and computer images to their original state and would prompt the computer to speak another line from the movie that prepared the user to take another guess ('Clear your head','Nervous?' etc) so the user felt they were taking turns with a new card each time.
+   - I had initially designed an 'interval' function to the game where I wanted to replicate Dr. Venkman holding up a new card each time before the player makes their next guess and for this I created a function called 'resetGame'. This function would reset the player and computer images to their original state and would prompt the computer to speak another line from the movie that prepared the user to take another guess ('Clear your head','Nervous?' etc) so the user felt they were taking turns with a new card each time.
 
 
      ![const interval string](readme-images/const-interval.png)
      ![reset function](readme-images/reset-function.png)
 
-   - I set a timeout of 2 seconds for resetGame() in the playGame (playerChoice) function so each time the user made a choice the game would reset in two seconds but retain the scores. However the buttons were still live and my mentor pointed out that it wasn't obvious that the player had to wait for the images to reset before taking their next turn and could keep making guesses potentially creating confusion.
+   - I set a timeout of 2 seconds for resetGame() in the playGame (playerChoice) function so each time the user made a choice the game would reset in two seconds but retain the scores. The correct responses were being generated from the string I createed but the buttons were still live and my mentor pointed out that it wasn't obvious that the player had to wait for the images to reset before taking their next turn and could keep making guesses potentially creating confusion.
 
-    - We discussed different approaches such as trying to temporarily remove the button Event Listeners, adding an overlay to the button so the player could access them until the game reset and hiding the div that held the buttons. 
+    - We discussed different approaches such as trying to temporarily remove the Event Listener from the buttons, adding an overlay to the buttons so the player couldn't access them until the game reset and hiding the div that held the buttons after each click. 
 
-     - Unfortunately all of my attempts at trying to make this work failed and while I wanted to try and push the game further I felt it was better to remove the 'interval' feature completely as it didn't take anything away from the basic game functionality when leaving it in the game could cause problems for the user.
+     - Unfortunately all of my attempts at trying to make this work failed and while I wanted to try and push the game further I felt it was better to remove the 'interval' feature completely as it didn't take anything away from the basic game functionality but leaving it in the game could cause problems for the user.
 
 ### 4.4 Supported Screens and Browsers
 
@@ -97,7 +107,7 @@ Below are my results from testing the site both structurally and visually.
 
 ### 4.5 Performance Testing
 
-- Initial test for the site was good and there were a few small changes to be made, mostly image sizing that I compressed to the point where I thought wouldn't be compromised. Following those changes I got these results from Lighthouse.
+- Initial test for the site was good and there were a few small changes to be made, mostly image sizing that I compressed to the point where I thought they wouldn't be compromised. Following those changes I got these results from Lighthouse.
 
 ![performance-homepage](readme-images/performance-homepage.png)
 
@@ -125,7 +135,7 @@ In this section I will break down the credits for my project.
 - I built some of the code based on the code shown in the [Rock Paper Scissors](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+JSE_PAGPPF+2021_Q2/courseware/30137de05cd847d1a6b6d2c7338c4655/c3bd296fe9d643af86e76e830e1470dd/) example project from Code Institute.
 
 
- - The code I used to develop the timeout feature in the function resetGame() was taken from [here](https://www.w3schools.com/js/js_timing.asp)
+ - The code I originally used to develop the timeout feature in the function resetGame() was taken from [here](https://www.w3schools.com/js/js_timing.asp)
 
 ### 6.2 Fonts
 

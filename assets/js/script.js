@@ -18,9 +18,9 @@ for (let button of buttons) {
 
 /**
  * Processes the user choice based on the button selected, noting the image and data type.
- * Generates the computer choice based on a random number generator up to five and uses the result 
+ * Generates the computer choice based on a random number generator and uses the result 
  * to select an option from 'choices' and its corresponding image.
- * The function the compares the choices of the user and computer to get the result
+ * The function then compares the choices of the user and computer to get the result
  */
 
 function playGame (playerChoice) {
@@ -40,7 +40,7 @@ function playGame (playerChoice) {
 
 
 /**
- * Processes the result and either increases the player score if they are correct or the computer score if the player is wrong
+ * Processes the result and either increases the player score if they are correct or the computer score if the player is wrong.
  */
 
 function checkResult (playerChoice, computerChoice) {
